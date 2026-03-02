@@ -1,92 +1,93 @@
-# Menü boşluklarını dolduracak malzeme.
-# Boş kalması için: AIR yazın.
+# menus.yml
+# Material to fill empty menu slots.
+# To leave empty: write AIR
 fill-material: "AIR"
 
 main-menu:
-  # Başlıkta değişken kullanabilirsin
+  # You can use variables in the title
   title: "&8%stack% %type% Spawner"
   size: 27
 
-  # Ana menüdeki info ikonunun altında çıkan depo listesinin formatı
-  # %item% = Eşya adı, %amount% = Miktar
+  # Format of the storage list under the info icon in the main menu
+  # %item% = Item name, %amount% = Amount
   storage-format: "&a%amount% &f%item%"
 
   items:
     sell-button:
       slot: 10
       material: GOLD_INGOT
-      name: "&cʜᴇᴘꜱɪɴɪ ꜱᴀᴛ"
+      name: "&cSELL ALL"
       lore:
-        - "&fTüm eşyaları satmak için tıkla!"
+        - "&fClick to sell all items!"
 
     xp-button:
       slot: 12
       material: EXPERIENCE_BOTTLE
-      name: "&a&lXP ᴛᴏᴘʟᴀ"
+      name: "&a&lCOLLECT XP"
       lore:
-        - "&7Biriken XP: &e%xp% &8/ &6%max_xp%"
+        - "&7Accumulated XP: &e%xp% &8/ &6%max_xp%"
         - " "
-        - "&fHaznedeki XP'yi almak için tıkla!"
+        - "&fClick to collect XP from the storage!"
 
     info-icon:
       slot: 14
-      material: SPAWNER # Varsayılan ikon
+      material: SPAWNER # Default icon
       name: "&a%stack% %type% Spawner"
       lore:
-        - "&7Depo Durumu:" # Bu satırın altına otomatik liste eklenir
+        - "&7Storage Status:" # Automatic list is added below this line
 
     storage-button:
       slot: 16
       material: DISPENSER
-      name: "&aɢᴀɴɪᴍᴇᴛɪ ʏᴇʀᴇ ʙɪʀᴀᴋ"
+      name: "&aDROP LOOT"
       lore:
-        - "&fSayfadaki tüm ganimetleri bırakmak için tıkla!"
+        - "&fClick to drop all loot on the page!"
 
 confirm-menu:
-  title: "&8Satışı Onayla"
+  title: "&8Confirm Sale"
   size: 27
   items:
     confirm:
       slot: 15
       material: LIME_STAINED_GLASS_PANE
-      name: "&a&lONAYLA ve SAT"
+      name: "&a&lCONFIRM and SELL"
       lore:
-        - "&7Parayı hesabına aktar."
+        - "&7Transfer the money to your account."
 
     cancel:
       slot: 11
       material: RED_STAINED_GLASS_PANE
-      name: "&c&lİPTAL ET"
+      name: "&c&lCANCEL"
       lore:
-        - "&7İşlemi iptal et."
+        - "&7Cancel the transaction."
 
     info:
       slot: 13
       material: PAPER
-      name: "&eEmin misin?"
+      name: "&eAre you sure?"
       lore:
-        - "&7Bu işlem geri alınamaz."
+        - "&7This action cannot be undone."
 
 storage-menu:
-  title: "&8Depo Yönetimi - Sayfa %page%"
+  title: "&8Storage Management - Page %page%"
   size: 54
-  # Depodaki eşyaların görünümü
+  # Appearance of items in storage
   item-lore: []
   items:
     previous-page:
       slot: 48
       material: ARROW
-      name: "&eÖnceki Sayfa"
+      name: "&ePrevious Page"
     next-page:
       slot: 50
       material: ARROW
-      name: "&eSonraki Sayfa"
+      name: "&eNext Page"
     drop-all:
       slot: 49
       material: DISPENSER
-      name: "&aᴛᴜᴍᴜɴᴜ ʏᴇʀᴇ ʙɪʀᴀᴋ"
+      name: "&aDROP ALL"
 
-# --- MOB KAFALARI (Base64 Texture) ---
+# --- MOB HEADS (Base64 Texture) ---
 mob-icons:
   IRON_GOLEM: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjJiY2FjZWViNDE2MmY0MDBkNDQ3NDMzMTU5MzJhYzgyMGQzMTE5YWM4OTg2YTAxNjFhNzI2MTYxY2NjOTNmYyJ9fX0="
   BLAZE: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjIwNjU3ZTI0YjU2ZTFiMmY4ZmMyMTlkYTFkZTc4OGMwYzI0ZjM2Mzg4YjFhNDA5ZDBjZDJkOGRiYTQ0YWEzYiJ9fX0="

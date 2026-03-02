@@ -1,4 +1,5 @@
-# Veritabanı Ayarları
+# config.yml
+# Database Settings
 database:
   type: "sqlite"
   host: "localhost"
@@ -9,11 +10,11 @@ database:
 
 settings:
   autosave-interval: 600
-  activation-range: 16 # Spawnerın çalışması için oyuncunun en fazla kaç blok yakınında olması gerek?
-  stack-limit: 32 # Bir blokta en fazla kaç spawner üst üste birikebilir?
-  spawn-interval: 25 # TAM VANILLA DENGESİ: Ortalama spawner çalışma süresi (Saniye)
+  activation-range: 16 # Max distance a player needs to be for the spawner to work
+  stack-limit: 32 # Max amount of spawners that can be stacked in a single block
+  spawn-interval: 25 # PURE VANILLA BALANCE: Average spawner activation interval (Seconds)
 
-# Spawner Kırma ve Düşürme Ayarları
+# Spawner Breaking and Dropping Settings
 spawner-settings:
   drop-chance: 100
   silktouch-required: true
@@ -21,11 +22,11 @@ spawner-settings:
   item-name: "&dSpawner"
   item-lore:
     - "&e%type%"
-  max-xp-per-spawner: 200 # 1 Spawner maksimum kaç XP biriktirebilir?
-  min-mobs-per-spawn: 3 # 1 Spawner her çalıştığında en az kaç mob üretir?
-  max-mobs-per-spawn: 4 # 1 Spawner her çalıştığında en fazla kaç mob üretir?
+  max-xp-per-spawner: 200 # Max XP a single spawner can accumulate
+  min-mobs-per-spawn: 3 # Min amount of mobs produced per spawn activation
+  max-mobs-per-spawn: 4 # Max amount of mobs produced per spawn activation
 
-# Mob Ayarları (XP, Fiyat, Şans %, Min Miktar, Max Miktar)
+# Mob Settings (XP, Price, Chance %, Min Amount, Max Amount)
 mobs:
   PIG:
     xp: 1

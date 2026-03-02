@@ -1,3 +1,4 @@
+# plugin.yml
 name: TudySpawners
 version: 1.0
 main: com.tudy.spawners.TudySpawners
@@ -8,12 +9,12 @@ authors: [Tudy]
 depend: [Vault]
 commands:
   tudyspawner:
-    description: Admin komutları
+    description: Admin commands
     usage: /tudyspawner reload
 permissions:
   tudyspawners.admin:
-    description: Eklentinin tüm yönetim komutlarına erişim sağlar.
+    description: Grants access to all management commands of the plugin.
     default: op
   tudyspawners.use:
-    description: Spawnerları kırma ve etkileşime girme yetkisi.
+    description: Permission to break and interact with spawners.
     default: true
