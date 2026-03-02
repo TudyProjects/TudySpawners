@@ -3,6 +3,8 @@
 An advanced **spawner management system** for Minecraft servers.  
 Includes explosion protection, stack limits, advanced drop mechanics, and Vault economy integration.
 
+![SpawnerGUI](https://github.com/user-attachments/assets/bd281098-10bf-4043-a5d1-572eb989d181)
+
 ## 🚀 Features
 
 - **Explosion Protection** - Spawners are fully protected from TNT, Creeper, and other entity explosions.
