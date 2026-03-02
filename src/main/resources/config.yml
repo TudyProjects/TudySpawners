@@ -1,0 +1,126 @@
+# Veritabanı Ayarları
+database:
+  type: "sqlite"
+  host: "localhost"
+  port: 3306
+  name: "minecraft"
+  user: "root"
+  password: ""
+
+settings:
+  autosave-interval: 600
+  activation-range: 16 # Spawnerın çalışması için oyuncunun en fazla kaç blok yakınında olması gerek?
+  stack-limit: 32 # Bir blokta en fazla kaç spawner üst üste birikebilir?
+  spawn-interval: 25 # TAM VANILLA DENGESİ: Ortalama spawner çalışma süresi (Saniye)
+
+# Spawner Kırma ve Düşürme Ayarları
+spawner-settings:
+  drop-chance: 100
+  silktouch-required: true
+  pickaxe-required: true
+  item-name: "&dSpawner"
+  item-lore:
+    - "&e%type%"
+  max-xp-per-spawner: 200 # 1 Spawner maksimum kaç XP biriktirebilir?
+  min-mobs-per-spawn: 3 # 1 Spawner her çalıştığında en az kaç mob üretir?
+  max-mobs-per-spawn: 4 # 1 Spawner her çalıştığında en fazla kaç mob üretir?
+
+# Mob Ayarları (XP, Fiyat, Şans %, Min Miktar, Max Miktar)
+mobs:
+  PIG:
+    xp: 1
+    drops:
+      PORKCHOP:
+        price: 0.2
+        chance: 100.0
+        min: 1
+        max: 2
+  COW:
+    xp: 2
+    drops:
+      BEEF:
+        price: 5.0
+        chance: 100.0
+        min: 1
+        max: 3
+      LEATHER:
+        price: 40.0
+        chance: 50.0
+        min: 0
+        max: 2
+  ZOMBIE:
+    xp: 3
+    drops:
+      ROTTEN_FLESH:
+        price: 1.0
+        chance: 100.0
+        min: 1
+        max: 2
+  SPIDER:
+    xp: 3
+    drops:
+      STRING:
+        price: 0.5
+        chance: 100.0
+        min: 1
+        max: 2
+      SPIDER_EYE:
+        price: 0.5
+        chance: 33.0
+        min: 1
+        max: 1
+  SKELETON:
+    xp: 4
+    drops:
+      BONE:
+        price: 2.0
+        chance: 100.0
+        min: 1
+        max: 2
+      ARROW:
+        price: 1.2
+        chance: 100.0
+        min: 1
+        max: 2
+  CREEPER:
+    xp: 5
+    drops:
+      GUNPOWDER:
+        price: 1.0
+        chance: 100.0
+        min: 1
+        max: 2
+  IRON_GOLEM:
+    xp: 10
+    drops:
+      IRON_INGOT:
+        price: 5.0
+        chance: 100.0
+        min: 1
+        max: 3
+      POPPY:
+        price: 1.0
+        chance: 50.0
+        min: 1
+        max: 2
+  BLAZE:
+    xp: 8
+    drops:
+      BLAZE_ROD:
+        price: 2.0
+        chance: 50.0
+        min: 1
+        max: 1
+  ZOMBIFIED_PIGLIN:
+    xp: 6
+    drops:
+      GOLD_NUGGET:
+        price: 0.5
+        chance: 100.0
+        min: 1
+        max: 2
+      ROTTEN_FLESH:
+        price: 1.0
+        chance: 100.0
+        min: 1
+        max: 1

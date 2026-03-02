@@ -1,0 +1,69 @@
+# Mesajları açıp kapatmak için (true/false)
+enabled: true
+
+# Mesaj Gönderim Ayarları
+settings:
+  send-to-chat: true      # Mesajlar sohbete yazılsın mı?
+  send-to-actionbar: true # Mesajlar can barının üzerinde (Actionbar) görünsün mü?
+
+prefix: "&bTudySpawners &r"
+
+admin:
+  no-permission: "&7Buna yetkiniz yok!"
+  reload: "&aTudySpawners dosyaları ve fiyatlar başarıyla yenilendi!"
+  give-usage: "&eKullanım: /tudyspawner give <oyuncu> <tür> <adet>"
+  give-success: "&a%player% adlı oyuncuya %amount% adet %type% spawner verildi."
+  invalid-type: "&cGeçersiz yaratık türü!"
+  player-not-found: "&cOyuncu bulunamadı."
+
+spawner:
+  placed: "&7Spawner başarıyla kuruldu!"
+  broken: "&7Spawner söküldü. &c%stack% Spawner"
+  broken-final: "&7Spawner tamamen söküldü."
+  stacked: "&7Spawner istiflendi! &a+%stack% Spawner"
+  limit-reached: "&7Maksimum spawner limitine ulaştınız! (%limit%)"
+  changed: "&aSpawner türü değiştirildi: &e%type%"
+  silk-touch-required: "&cSpawnerı almak için İpeksi Dokunuş gerekli!"
+  cant-place-here: "&cBuraya spawner koyamazsın!"
+  no-permission: "&cBunu kırmaya yetkiniz yok!"
+
+menu:
+  sell-success: "&7Satış Başarılı! Toplam: &a₺%money%"
+  sell-fail: "&7Satılacak değerli bir eşya yok!"
+  storage-empty: "&7Depo boş!"
+  action-cancelled: "&7İşlem iptal edildi."
+  items-dropped: "&7Depodaki eşyalar yere bırakıldı."
+  items-dropped-page: "&7Bu sayfadaki eşyalar yere bırakıldı."
+  items-dropped-fail: "&cBu sayfada bırakılacak eşya yok."
+  inventory-full: "&cEnvanter dolu! Eşya yere düştü."
+  # --- YENİ EKLENEN XP MESAJLARI ---
+  xp-collected: "&a✔ Başarıyla &e%xp% XP &atopladın!"
+  xp-empty: "&c✖ Haznede toplanacak XP yok!"
+
+# Mob İsimleri
+mob-names:
+  IRON_GOLEM: "Demir Golem"
+  PIG: "Domuz"
+  COW: "İnek"
+  ZOMBIE: "Zombi"
+  SKELETON: "İskelet"
+  SPIDER: "Örümcek"
+  CREEPER: "Creeper"
+  BLAZE: "Blaze"
+  ZOMBIFIED_PIGLIN: "Zombileşmiş Piglin"
+
+# Eşya İsimleri (Depoda ve Menüde görünecek)
+item-names:
+  IRON_INGOT: "Demir Külçesi"
+  POPPY: "Gelincik"
+  BEEF: "Çiğ İnek Eti"
+  LEATHER: "Deri"
+  PORKCHOP: "Çiğ Domuz Eti"
+  ROTTEN_FLESH: "Çürük Et"
+  BONE: "Kemik"
+  ARROW: "Ok"
+  STRING: "İp"
+  SPIDER_EYE: "Örümcek Gözü"
+  GUNPOWDER: "Barut"
+  BLAZE_ROD: "Blaze Çubuğu"
+  GOLD_NUGGET: "Altın Parçası"

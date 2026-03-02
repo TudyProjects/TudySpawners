@@ -1,0 +1,19 @@
+name: TudySpawners
+version: 1.0
+main: com.tudy.spawners.TudySpawners
+api-version: 1.21
+description: Advanced Stack Spawner and Storage Plugin.
+website: https://discord.gg/tudy
+authors: [Tudy]
+depend: [Vault]
+commands:
+  tudyspawner:
+    description: Admin komutları
+    usage: /tudyspawner reload
+permissions:
+  tudyspawners.admin:
+    description: Eklentinin tüm yönetim komutlarına erişim sağlar.
+    default: op
+  tudyspawners.use:
+    description: Spawnerları kırma ve etkileşime girme yetkisi.
+    default: true
